@@ -1,20 +1,21 @@
 "use strict"
 const tableau  = require('./tableaux.js')
 
-const max = tableau.length
-
-console.log('max= ' + max)
 
 const peupler_json = () => {
 
-  let position 
-  let tabVille = []
-  for (let k=0 ; k<10; k++)
-	{
+  let position, chiffre 
+  let personneTab = []
+  for (let k=0 ; k<10; k++) {
+
+    personneTab[k] = {};
+
 		position = Math.floor(Math.random()*max)
-		tabVille.push(tableau[position])
-	}
-  return(tabVille)
+		personneTab[k]['prenom'] = tableaux.prenom[position];
+	
+  }
+
+  return(personneTab)
 }
 
 

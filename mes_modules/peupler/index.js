@@ -22,7 +22,7 @@ const peupler_json = () => {
     for (var i = 0; i < 10; i++) {
       
       chiffre = Math.floor(Math.random()*10);
-      tel += chiffre;
+      telephone += chiffre;
 
     }
 

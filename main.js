@@ -1,6 +1,5 @@
 "use strict";
 
-const fs = require('fs');
 const peupler = require("./mes_modules/peupler");
 const express = require('express');
 const fs = require("fs");

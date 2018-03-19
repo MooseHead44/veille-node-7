@@ -10,8 +10,12 @@ const peupler_json = () => {
 
     personneTab[k] = {};
 
-		position = Math.floor(Math.random()*max)
-		personneTab[k]['prenom'] = tableaux.prenom[position];
+		position = Math.floor(Math.random()*tableau.prenom.length)
+		personneTab[k]['prenom'] = tableau.prenom[position];
+    position = Math.floor(Math.random()*tableau.nom.length)
+    personneTab[k]['nom'] = tableau.nom[position];
+    position = Math.floor(Math.random()*tableau.prenom.length)
+    personneTab[k]['prenom'] = tableau.prenom[position];
 	
   }
 
